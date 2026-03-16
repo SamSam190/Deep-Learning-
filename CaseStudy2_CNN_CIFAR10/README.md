@@ -1,30 +1,47 @@
-# Handwritten Digit Recognition using MLP (NumPy)
+# Case Study 2: CNN Image Classification on CIFAR-10
 
-This project implements a Multi-Layer Perceptron (MLP) from scratch using NumPy to classify handwritten digits from the MNIST dataset.
-
-## Architecture
-
-784 → 128 → 64 → 10
-
-Input Layer: 784 neurons  
-Hidden Layer 1: 128 neurons (ReLU)  
-Hidden Layer 2: 64 neurons (ReLU)  
-Output Layer: 10 neurons (Softmax)
-
-## Features
-
-- Forward Propagation
-- Backpropagation
-- Gradient Descent Optimization
-- Softmax Classification
-- Cross Entropy Loss
+This project implements a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset.
 
 ## Dataset
 
-MNIST Handwritten Digits
+CIFAR-10 contains 60,000 color images of size 32x32 belonging to 10 classes.
 
-## Accuracy
+Classes:
+- Airplane
+- Automobile
+- Bird
+- Cat
+- Deer
+- Dog
+- Frog
+- Horse
+- Ship
+- Truck
 
-~90% depending on training conditions.
+## CNN Architecture
+
+Input: 32x32x3
+
+Conv2D (32 filters, 3x3)
+MaxPooling (2x2)
+
+Conv2D (64 filters, 3x3)
+MaxPooling (2x2)
+
+Conv2D (64 filters)
+
+Flatten
+
+Dense (128)
+
+Output Dense (10 Softmax)
+
+## Concepts Used
+
+- Convolutional Neural Networks
+- Feature Extraction
+- Pooling
+- Softmax Classification
+- Adam Optimizer
 
 ## Run
